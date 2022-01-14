@@ -1,0 +1,44 @@
+@mixin block {
+    display: flex;
+    justify-content: space-between;
+}
+@mixin posit_center {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@mixin content {
+    display: flex;
+    flex-direction: column;
+}
+@mixin title {
+    margin-top: 20px;
+    font-size: 30px;
+    color:#1c1c1b;
+}
+@mixin box {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+@mixin button {
+    position: relative;
+    padding: 15px 80px 15px 20px;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s all;
+    &::after {
+        content: "";
+        position: absolute;
+        width: 20%;
+        height: 2px;
+        bottom: 50%;
+        right: 20px;
+        background: white;
+    
+}
+}
